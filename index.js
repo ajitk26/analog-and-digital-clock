@@ -9,9 +9,9 @@ setInterval(()=>{
    let hr_rotation=((hr / 12) * 360) + ((min/60)*30);
    let sec_rotation= 6*sec;
    let min_rotation=6*min;
-   hour.style.transform = `rotate(${hr_rotation}deg)`;
-   minute.style.transform = `rotate(${min_rotation}deg)`;
-   second.style.transform = `rotate(${sec_rotation}deg)`;
+   hour.style.transform = `rotate(${-hr_rotation}deg)`;
+   minute.style.transform = `rotate(${-min_rotation}deg)`;
+   second.style.transform = `rotate(${-sec_rotation}deg)`;
 
    let hours=document.getElementById("hr");
    let minutes=document.getElementById("min");
